@@ -36,14 +36,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// API GET request
-$(document).ready(function() {
-  const URL = "https://api.turbovote.org/elections/upcoming"
-  $('.button').click(function(){
-    $.get(URL, function(data, status){
-      console.log(`${data}`)
-    })
-  })
-})
-
 module.exports = app;
